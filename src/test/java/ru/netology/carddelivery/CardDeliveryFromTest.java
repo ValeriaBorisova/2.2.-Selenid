@@ -21,7 +21,7 @@ public class CardDeliveryFromTest {
         open("http://localhost:9999");
         $("[data-test-id='city'] input").val("Уфа");
         $("div[class='popup__content'] span").click();
-        String planningDate = generateDate(12);
+        String planningDate = generateDate(3);
         $("[data-test-id='date'] input[class='input__control']").doubleClick()
                 .val(planningDate).pressTab();
         $("[data-test-id='name'] input").val("Кара-Мурза Абдулла");
